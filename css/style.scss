@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap'); */
 
 * {
   box-sizing: border-box;
@@ -32,6 +32,7 @@ body {
   z-index: -1;
 }
 
+//главный блок
 .main {
   max-width: 1105px;
   display: flex;
@@ -40,37 +41,7 @@ body {
   position: relative;
 }
 
-.icon{
-  position: absolute;
-}
-
-.icon-envelope-1{
-  left: -90px;
-  bottom: -70px;
-}
-
-.icon-envelope-2{
-  right: -30px;
-  top: -70px;
-}
-
-.icon-hart{
-  right: -115px;
-  top: 48px;
-}
-
-.icon-information{
-  right: 50%;
-  top: 50%;
-}
-
-.icon-plus{
-  right: 10%;
-  bottom: 0;
-  transform: translateY(200%);
-}
-
-
+//левая часть блока .main с основной информацией
 .content {
   width: 57%;
   &__title {
@@ -106,6 +77,19 @@ body {
     line-height: 32.4px;
   }
 }
+
+//правая часть блока .main с картинкой
+.decoration {
+  position: relative;
+  width: 580px;
+
+  &__image{
+    position: absolute;
+    top: -30px;
+  }
+}
+
+//блок с названиями курсов
 .list {
   display: flex;
   flex-wrap: wrap;
@@ -127,14 +111,49 @@ body {
 .bold {
   font-weight: 600;
 }
-.decoration {
-  position: relative;
-  width: 580px;
+
+
+//Плавающие иконки
+.icon{
+  position: absolute;
 }
 
-.decoration img{
-  position: absolute;
-  top: -30px;
+.icon-envelope-1{
+  left: -90px;
+  bottom: -70px;
+  @media(max-width: 1300px){
+    left: -65px;
+    bottom: -30px; 
+  }
+}
+
+.icon-envelope-2{
+  right: -30px;
+  top: -70px;
+  @media(max-width: 1300px){
+    right: -30px;
+    top: -40px; 
+  }
+}
+
+.icon-hart{
+  right: -115px;
+  top: 48px;
+  @media(max-width: 1300px){
+    right: -50px;
+    bottom: 30%; 
+  }
+}
+
+.icon-information{
+  right: 50%;
+  top: 50%;
+}
+
+.icon-plus{
+  right: 10%;
+  bottom: 0;
+  transform: translateY(200%);
 }
 
 .icon-float{
