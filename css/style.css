@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #333333;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.background {
+  width: 443px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/Ellipse.jpg) left no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  z-index: -1;
+}
+
+.main {
+  max-width: 1105px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon-envelope-1 {
+  left: -90px;
+  bottom: -70px;
+}
+
+.icon-envelope-2 {
+  right: -30px;
+  top: -70px;
+}
+
+.icon-hart {
+  right: -115px;
+  top: 48px;
+}
+
+.icon-information {
+  right: 50%;
+  top: 50%;
+}
+
+.icon-plus {
+  right: 10%;
+  bottom: 0;
+  -webkit-transform: translateY(200%);
+      -ms-transform: translateY(200%);
+          transform: translateY(200%);
+}
+
+.content {
+  width: 57%;
+}
+
+.content__title {
+  margin-bottom: 40px;
+}
+
+.content__title-main {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.content__title--color {
+  color: #a100ff;
+}
+
+.content__title-sub {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.content__direction {
+  margin-bottom: 120px;
+}
+
+.content__direction h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.content__information {
+  font-size: 24px;
+  line-height: 32.4px;
+}
+
+.list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 400px;
+}
+
+.list__item {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #333333;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  margin-right: 7px;
+}
+
+.list__item:last-child {
+  margin-top: 12px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.decoration {
+  position: relative;
+  width: 580px;
+}
+
+.decoration img {
+  position: absolute;
+  top: -30px;
+}
+
+.icon-float {
+  -webkit-animation: Up-icon-float infinite 3s ease-in-out;
+          animation: Up-icon-float infinite 3s ease-in-out;
+}
+
+@-webkit-keyframes Up-icon-float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes Up-icon-float {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
