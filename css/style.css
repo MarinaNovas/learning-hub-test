@@ -30,6 +30,24 @@ body {
   position: relative;
 }
 
+.wrapper-main {
+  width: 1176px;
+  height: 100%;
+  background-color: aquamarine;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .background {
   width: 443px;
   position: absolute;
@@ -43,7 +61,7 @@ body {
 }
 
 .main {
-  max-width: 1105px;
+  width: 1078px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -53,10 +71,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  background-color: #a100ff;
 }
 
 .content {
   width: 57%;
+  max-width: 57%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
 
 .content__title {
@@ -94,11 +118,14 @@ body {
 
 .decoration {
   position: relative;
-  width: 580px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .decoration__image {
+  width: 100%;
   position: absolute;
+  left: 0;
   top: -30px;
 }
 
