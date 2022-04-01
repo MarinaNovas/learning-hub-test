@@ -9,6 +9,7 @@ body {
 
   font-family: "Inter", sans-serif;
   font-size: 24px;
+  line-height: 1;
   color: #333333;
 }
 
@@ -23,7 +24,6 @@ body {
 .wrapper-main{
   width: $col*12;
   height: 100%;
-  background-color: aquamarine;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -46,13 +46,12 @@ body {
   justify-content: space-between;
 
   position: relative;
-  background-color: #a100ff;
 }
 
 //левая часть блока .main с основной информацией
 .content {
-  width: 57%;
-  max-width: 57%;
+  width: 50%;
+  max-width: 50%;
   flex: 0 0 50%;
   &__title {
     margin-bottom: 40px;
@@ -107,6 +106,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 400px;
+  list-style: none;
   &__item {
     padding: 5px 15px;
     font-size: 14px;
@@ -132,8 +132,10 @@ body {
 }
 
 .icon-envelope-1{
+  width: 47px;
+  height: 43px;
   left: -90px;
-  bottom: -70px;
+  bottom: -45px;
   @media(max-width: 1300px){
     left: -65px;
     bottom: -30px; 
@@ -141,6 +143,8 @@ body {
 }
 
 .icon-envelope-2{
+  width: 47px;
+  height: 43px;
   right: -30px;
   top: -70px;
   @media(max-width: 1300px){
@@ -150,7 +154,9 @@ body {
 }
 
 .icon-hart{
-  right: -115px;
+  width: 30px;
+  height: 26px;
+  right: -85px;
   top: 48px;
   @media(max-width: 1300px){
     right: -50px;
@@ -159,11 +165,15 @@ body {
 }
 
 .icon-information{
+  width: 46px;
+  height: 42px;
   right: 50%;
   top: 50%;
 }
 
 .icon-plus{
+  width: 30px;
+  height: 30px;
   right: 10%;
   bottom: 0;
   transform: translateY(200%);
